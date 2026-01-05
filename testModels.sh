@@ -1,1 +1,0 @@
-curl -kL -H "Authorization: Bearer "$(oc whoami -t) -H "Content-type: application/json" $1/v1/chat/completions -d "{'model':'$2', 'messages': [{'role':'system','content':'$3'}, {'role':'user','content':'$4'}]}"
